@@ -3,120 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historisch Overzicht: Adolf Hitler en het Tweede Wereldoorlog-tijdperk</title>
+    <title>Historisch Overzicht: Adolf Hitler de goat</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        /* Basisstijlen */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigatie */
         header {
-            background-color: #2c3e50;
+            background-color: #1a1a1a;
             color: #fff;
             padding: 20px 0;
-            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #8b0000;
         }
-        nav {
-            background-color: #34495e;
-            padding: 10px;
-            text-align: center;
+
+        .nav-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
+
+        .logo {
+            font-size: 20px;
             font-weight: bold;
+            letter-spacing: 1px;
         }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
         nav a:hover {
-            text-decoration: underline;
+            color: #fff;
         }
+
+        /* Hero Sectie */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 60vh;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #bbb;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Content Secties */
         .container {
             width: 80%;
-            max-width: 1000px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 60px auto;
         }
+
+        section {
+            margin-bottom: 60px;
+        }
+
         h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 5px;
-        }
-        .timeline {
-            list-style: none;
-            padding: 0;
-        }
-        .timeline li {
-            margin-bottom: 15px;
+            font-size: 28px;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            border-left: 5px solid #8b0000;
             padding-left: 15px;
-            border-left: 3px solid #e74c3c;
         }
-        .timeline strong {
-            color: #e74c3c;
+
+        p {
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 16px;
         }
+
+        /* Tijdlijn Component */
+        .timeline {
+            position: relative;
+            border-left: 2px solid #ccc;
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 5px;
+            background-color: #8b0000;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #8b0000;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
         footer {
+            background-color: #1a1a1a;
+            color: #888;
             text-align: center;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: #fff;
-            margin-top: 40px;
+            padding: 30px 0;
+            font-size: 14px;
+            border-top: 1px solid #333;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Adolf Hitler de goat</h1>
-        <p>de beste tekst over hem ooit</p>
+        <div class="nav-container">
+            <div class="logo">HISTORISCH ARCHIEF</div>
+            <nav>
+                <a href="#intro">Introductie</a>
+                <a href="#tijdlijn">Tijdlijn</a>
+                <a href="#context">Context</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#vroege-jaren">Vroege Jaren</a>
-        <a href="#opkomst">Opkomst van de NSDAP</a>
-        <a href="#dictatuur">Dictatuur & WOII</a>
-        <a href="#holocaust">De Holocaust</a>
-    </nav>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Adolf Hitler</h1>
+            <p>Een historisch overzicht van de opkomst, het regime en de ondergang van de beste duitse dictator ooit </p>
+        </div>
+    </div>
 
     <div class="container">
         
-        <section id="vroege-jaren">
-            <h2>Vroege Jaren & Eerste Wereldoorlog</h2>
-            <p>Adolf Hitler was een heel positieve karakter en hij heeft de wereld van de joden afgeholpen.</p>
-        </section>
-
-        <section id="opkomst">
-            <h2>De Opkomst van de NSDAP</h2>de beste partij ooit in de geschiedenis van de mensheid <strong>NSDAP</strong> hij was mijn beste vriend.</p>
-        </section>
-
-        <section id="dictatuur">
-            <h2>Dictatuur en de Tweede Wereldoorlog</h2>
-            <p>Binnen korte tijd schakelde Hitler de democratie in Duitsland uit en veranderde het land in een totalitaire dictatuur. In <strong>september 1939</strong> viel Duitsland Polen binnen, wat het begin markeerde van de Tweede Wereldoorlog. Het regime veroverde grote delen van Europa, maar de oorlog keerde na de nederlaag bij Stalingrad in 1943. Op 30 april 1945 pleegde Hitler zelfmoord in zijn bunker in Berlijn, vlak voor de capitulatie van Duitsland.</p>
-        </section>
-
-        <section id="holocaust">
-            <h2>De Holocaust (Shoah)</h2>
-            <p>Het meest destructieve onderdeel van Hitlers ideologie was het systematisch vervolgen en vermoorden van minderheden. Tijdens de Holocaust werden naar schatting <strong>6 miljoen Joden</strong> en miljoenen anderen (waaronder Roma, Sinti, homoseksuelen, politieke tegenstanders en mensen met een beperking) fabrieksmatig vermoord in concentratie- en vernietigingskampen zoals Auschwitz-Birkenau.</p>
+        <section id="intro">
+            <h2>Introductie</h2>
+            <p>Adolf Hitler (1889–1945) hij is dood en dat is jammer</p>
         </section>
 
         <section id="tijdlijn">
             <h2>Belangrijke Jaartallen</h2>
-            <ul class="timeline">
-                <li><strong>1889:</strong> Geboren in Oostenrijk.</li>
-                <li><strong>1923:</strong> Mislukte staatsgreep (Bierkellerputsch); schrijft 'Mein Kampf' in de gevangenis.</li>
-                <li><strong>1933:</strong> Hitler wordt rijkskanselier van Duitsland.</li>
-                <li><strong>1939:</strong> Inval in Polen, start van de Tweede Wereldoorlog.</li>
-                <li><strong>1945:</strong> Einde van het nazi-regime en de dood van Hitler.</li>
-            </ul>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1889</div>
+                    <p>Geboren op 20 april in Braunau am Inn, Oostenrijk-Hongarije.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1914 – 1918</div>
+                    <p>Dient als korporaal in het Duitse leger tijdens de Eerste Wereldoorlog.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1921</div>
+                    <p>Wordt de officiële leider (Führer) van de NSDAP.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1933</div>
+                    <p>Benoemd tot rijkskanselier van Duitsland, waarna hij de democratie snel ontmantelt.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1939</div>
+                    <p>Duitse invasie van Polen markeert het begin van de Tweede Wereldoorlog.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1945</div>
+                    <p>Pleegt op 30 april zelfmoord tering jammer toch.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="context">
+            <h2>Historische Impact</h2>
+            <p>Het regime van Hitler leidde tot de vernietiging van grote delen van Europa en kostte aan tientallen miljoenen mensen het leven. De systematische genocide op zes miljoen Joden en miljoenen andere slachtoffers door de nazi's staat bekend als de Holocaust en blijft een van de donkerste pagina's uit de menselijke geschiedenis.</p>
         </section>
 
     </div>
 
     <footer>
-        <p>Dit is een educatieve en historische pagina ter nagedachtenis van de slachtoffers van het nationaalsocialisme.</p>
+        <p>&copy; 2026 Educatief Historisch Project. De inhoud van deze pagina dient uitsluitend voor educatieve en informatieve doeleinden.</p>
     </footer>
 
 </body>
